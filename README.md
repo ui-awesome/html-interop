@@ -1,30 +1,19 @@
 <p align="center">
-    <a href="https://github.com/yii-tools/template" target="_blank">
+    <a href="https://github.com/ui-awesome/html-interop" target="_blank">
         <img src="https://avatars.githubusercontent.com/u/121752654?s=200&v=4" height="100px">
     </a>
-    <h1 align="center">Template.</h1>
+    <h1 align="center">UI Awesome HTML Interop Common Interfaces for PHP.</h1>
     <br>
 </p>
 
 <p align="center">
-    <a href="https://github.com/yii-tools/template/actions/workflows/build.yml" target="_blank">
-        <img src="https://github.com/yii-tools/template/actions/workflows/build.yml/badge.svg" alt="PHPUnit">
     </a>
-    <a href="https://codecov.io/gh/yii-tools/template" target="_blank">
-        <img src="https://codecov.io/gh/yii-tools/template/branch/main/graph/badge.svg?token=MF0XUGVLYC" alt="Codecov">
+    <a href="https://github.com/ui-awesome/html-interop/actions/workflows/static.yml" target="_blank">
+        <img src="https://github.com/ui-awesome/html-interop/actions/workflows/static.yml/badge.svg" alt="Psalm">
     </a>
-    <a href="https://dashboard.stryker-mutator.io/reports/github.com/yii-tools/template/main" target="_blank">
-        <img src="https://img.shields.io/endpoint?style=flat&url=https%3A%2F%2Fbadge-api.stryker-mutator.io%2Fgithub.com%2Fyii2-extensions%2Fasset-bootstrap5%2Fmain" alt="Infection">
-    </a>
-    <a href="https://github.com/yii-tools/template/actions/workflows/static.yml" target="_blank">
-        <img src="https://github.com/yii-tools/template/actions/workflows/static.yml/badge.svg" alt="Psalm">
-    </a>
-    <a href="https://shepherd.dev/github/yii-tools/template" target="_blank">
-        <img src="https://shepherd.dev/github/yii-tools/template/coverage.svg" alt="Psalm Coverage">
-    </a>
-    <a href="https://github.styleci.io/repos/494495136?branch=main" target="_blank">
-        <img src="https://github.styleci.io/repos/494495136/shield?branch=main" alt="Style ci">
-    </a>           
+    <a href="https://github.styleci.io/repos/767397797?branch=main">
+        <img src="https://github.styleci.io/repos/767397797/shield?branch=main" alt="Style ci">
+    </a>    
 </p>
 
 ## Installation
@@ -34,24 +23,46 @@ The preferred way to install this extension is through [composer](https://getcom
 Either run
 
 ```shell
-composer require --prefer-dist package
+composer require --prefer-dist ui-awesome/html-interop:"^0.1"
 ```
 
 or add
 
 ```json
-"package": "version"
+"ui-awesome/html-interop": "^0.1"
 ```
 
-to the require-dev section of your `composer.json` file. 
-
-## Usage
-
-[Check the documentation docs](docs/README.md) to learn about usage.
+to the require section of your `composer.json` file. 
 
 ## Testing
 
-[Check the documentation testing](docs/testing.md) to learn about testing.
+### Checking dependencies
+
+This package uses [composer-require-checker](https://github.com/maglnet/ComposerRequireChecker) to check if all
+dependencies are correctly defined in `composer.json`.
+
+To run the checker, execute the following command:
+
+```shell
+composer run check-dependencies
+```
+
+### Easy coding standard
+
+The code is checked with [Easy Coding Standard](https://github.com/easy-coding-standard/easy-coding-standard) and
+[PHP CS Fixer](https://github.com/PHP-CS-Fixer/PHP-CS-Fixer). To run it:
+
+```shell
+composer run ecs
+```
+
+### Static analysis
+
+The code is statically analyzed with [Psalm](https://psalm.dev/). To run static analysis:
+
+```shell
+composer run psalm
+```
 
 ## Support versions
 

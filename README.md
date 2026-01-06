@@ -1,77 +1,38 @@
+<!-- markdownlint-disable MD041 -->
 <p align="center">
-    <a href="https://github.com/ui-awesome/html-interop" target="_blank">
-        <img src="https://avatars.githubusercontent.com/u/121752654?s=200&v=4" height="100px">
-    </a>
-    <h1 align="center">UI Awesome HTML Interop Common Interfaces for PHP.</h1>
+    <picture>
+        <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/ui-awesome/.github/refs/heads/main/logo/ui_awesome_dark.png">
+        <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/ui-awesome/.github/refs/heads/main/logo/ui_awesome_light.png">
+        <img src="https://raw.githubusercontent.com/ui-awesome/.github/refs/heads/main/logo/ui_awesome_dark.png" alt="UI Awesome" width="150px">
+    </picture>
+    <h1 align="center">Html interop</h1>
     <br>
 </p>
+<!-- markdownlint-enable MD041 -->
 
-<p align="center">
-    </a>
-    <a href="https://github.com/ui-awesome/html-interop/actions/workflows/static.yml" target="_blank">
-        <img src="https://github.com/ui-awesome/html-interop/actions/workflows/static.yml/badge.svg" alt="Psalm">
-    </a>
-    <a href="https://github.styleci.io/repos/767397797?branch=main">
-        <img src="https://github.styleci.io/repos/767397797/shield?branch=main" alt="Style ci">
-    </a>    
-</p>
+## Documentation
 
-## Installation
+For detailed configuration options and advanced usage.
 
-The preferred way to install this extension is through [composer](https://getcomposer.org/download/).
+- [Testing Guide](docs/testing.md)
 
-Either run
+## Package information
 
-```shell
-composer require --prefer-dist ui-awesome/html-interop:"^0.1"
-```
+[![PHP](https://img.shields.io/badge/%3E%3D8.1-777BB4.svg?style=for-the-badge&logo=php&logoColor=white)](https://www.php.net/releases/8.1/en.php)
+[![Latest Stable Version](https://img.shields.io/packagist/v/ui-awesome/html-interop.svg?style=for-the-badge&logo=packagist&logoColor=white&label=Stable)](https://packagist.org/packages/ui-awesome/html-interop)
+[![Total Downloads](https://img.shields.io/packagist/dt/ui-awesome/html-interop.svg?style=for-the-badge&logo=composer&logoColor=white&label=Downloads)](https://packagist.org/packages/ui-awesome/html-interop)
 
-or add
+## Quality code
 
-```json
-"ui-awesome/html-interop": "^0.1"
-```
-
-to the require section of your `composer.json` file. 
-
-## Testing
-
-### Checking dependencies
-
-This package uses [composer-require-checker](https://github.com/maglnet/ComposerRequireChecker) to check if all
-dependencies are correctly defined in `composer.json`.
-
-To run the checker, execute the following command:
-
-```shell
-composer run check-dependencies
-```
-
-### Easy coding standard
-
-The code is checked with [Easy Coding Standard](https://github.com/easy-coding-standard/easy-coding-standard) and
-[PHP CS Fixer](https://github.com/PHP-CS-Fixer/PHP-CS-Fixer). To run it:
-
-```shell
-composer run ecs
-```
-
-### Static analysis
-
-The code is statically analyzed with [Psalm](https://psalm.dev/). To run static analysis:
-
-```shell
-composer run psalm
-```
-
-## Support versions
-
-[![PHP81](https://img.shields.io/badge/PHP-%3E%3D8.1-787CB5)](https://www.php.net/releases/8.1/en.php)
-
-## License
-
-The MIT License (MIT). Please see [License File](LICENSE) for more information.
+[![Codecov](https://img.shields.io/codecov/c/github/ui-awesome/html-interop.svg?style=for-the-badge&logo=codecov&logoColor=white&label=Coverage)](https://codecov.io/github/ui-awesome/html-interop)
+[![PHPStan Level Max](https://img.shields.io/badge/PHPStan-Level%20Max-4F5D95.svg?style=for-the-badge&logo=github&logoColor=white)](https://github.com/ui-awesome/html-interop/actions/workflows/static.yml)
+[![Super-Linter](https://img.shields.io/github/actions/workflow/status/ui-awesome/html-interop/linter.yml?style=for-the-badge&label=Super-Linter&logo=github)](https://github.com/ui-awesome/html-interop/actions/workflows/linter.yml)
+[![StyleCI](https://img.shields.io/badge/StyleCI-Passed-44CC11.svg?style=for-the-badge&logo=github&logoColor=white)](https://github.styleci.io/repos/779611775?branch=main)
 
 ## Our social networks
 
-[![Twitter](https://img.shields.io/badge/twitter-follow-1DA1F2?logo=twitter&logoColor=1DA1F2&labelColor=555555?style=flat)](https://twitter.com/Terabytesoftw)
+[![Follow on X](https://img.shields.io/badge/-Follow%20on%20X-1DA1F2.svg?style=for-the-badge&logo=x&logoColor=white&labelColor=000000)](https://x.com/Terabytesoftw)
+
+## License
+
+[![License](https://img.shields.io/badge/License-BSD--3--Clause-brightgreen.svg?style=for-the-badge&logo=opensourceinitiative&logoColor=white&labelColor=555555)](LICENSE)

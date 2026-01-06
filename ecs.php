@@ -66,7 +66,7 @@ return ECSConfig::configure()
     ->withFileExtensions(['php'])
     ->withPaths(
         [
-            __DIR__ . '/src'
+            __DIR__ . '/src',
         ],
     )
     ->withPhpCsFixerSets(perCS20: true)

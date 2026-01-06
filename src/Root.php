@@ -44,6 +44,7 @@ enum Root: string implements BlockInterface
      * @link https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/head
      */
     case HEAD = 'head';
+
     /**
      * Case for the `<html>` HTML tag.
      *

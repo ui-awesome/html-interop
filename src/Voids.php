@@ -116,6 +116,15 @@ enum Voids: string implements VoidInterface
     case META = 'meta';
 
     /**
+     * Case for the `<param>` HTML tag.
+     *
+     * Categorized as metadata content.
+     *
+     * @link https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/param
+     */
+    case PARAM = 'param';
+
+    /**
      * Case for the `<source>` HTML tag.
      *
      * @link https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/source

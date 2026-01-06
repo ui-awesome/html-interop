@@ -10,6 +10,252 @@
 </p>
 <!-- markdownlint-enable MD041 -->
 
+<p align="center">
+    <a href="https://github.com/ui-awesome/html-interop/actions/workflows/build.yml" target="_blank">
+        <img src="https://img.shields.io/github/actions/workflow/status/ui-awesome/html-interop/build.yml?style=for-the-badge&label=PHPUnit&logo=github" alt="PHPUnit">
+    </a>
+    <a href="https://dashboard.stryker-mutator.io/reports/github.com/ui-awesome/html-interop/main" target="_blank">
+        <img src="https://img.shields.io/endpoint?style=for-the-badge&url=https%3A%2F%2Fbadge-api.stryker-mutator.io%2Fgithub.com%2Fui-awesome%2Fhtml-interop%2Fmain" alt="Mutation Testing">
+    </a>
+    <a href="https://github.com/ui-awesome/html-interop/actions/workflows/static.yml" target="_blank">
+        <img src="https://img.shields.io/github/actions/workflow/status/ui-awesome/html-interop/static.yml?style=for-the-badge&label=PHPStan&logo=github" alt="PHPStan">
+    </a>
+</p>
+
+<p align="center">
+    <strong>Common interfaces and type-safe enums for HTML tag interoperability</strong><br>
+    <em>Provides standardized contracts and tag collections for block, inline, list, root, table, and void elements.</em>
+</p>
+
+## Features
+
+<picture>
+    <source media="(min-width: 768px)" srcset="./docs/svgs/features.svg">
+    <img src="./docs/svgs/features-mobile.svg" alt="Feature Overview" style="width: 100%;">
+</picture>
+
+### Installation
+
+```bash
+composer require ui-awesome/html-interop:^0.2
+```
+
+### Quick start
+
+#### Using block-level HTML tags
+
+Access standardized block-level tag names through the `Block` enum.
+
+```php
+<?php
+
+declare(strict_types=1);
+
+namespace App;
+
+use UIAwesome\Html\Interop\Block;
+
+echo Block::DIV->value;
+// 'div'
+
+echo Block::ARTICLE->value;
+// 'article'
+
+echo Block::SECTION->value;
+// 'section'
+```
+
+#### Using inline-level HTML tags
+
+Access standardized inline-level tag names through the `Inline` enum.
+
+```php
+<?php
+
+declare(strict_types=1);
+
+namespace App;
+
+use UIAwesome\Html\Interop\Inline;
+
+echo Inline::SPAN->value;
+// 'span'
+
+echo Inline::STRONG->value;
+// 'strong'
+
+echo Inline::A->value;
+// 'a'
+```
+
+#### Using void (self-closing) HTML tags
+
+Access standardized void element tag names through the `Voids` enum.
+
+```php
+<?php
+
+declare(strict_types=1);
+
+namespace App;
+
+use UIAwesome\Html\Interop\Voids;
+
+echo Voids::IMG->value;
+// 'img'
+
+echo Voids::INPUT->value;
+// 'input'
+
+echo Voids::BR->value;
+// 'br'
+```
+
+#### Using specialized HTML tag collections
+
+Use specialized enums for list, root, and table elements.
+
+```php
+<?php
+
+declare(strict_types=1);
+
+namespace App;
+
+use UIAwesome\Html\Interop\{Lists, Root, Table};
+
+// List elements
+echo Lists::UL->value;
+// 'ul'
+
+echo Lists::OL->value;
+// 'ol'
+
+echo Lists::LI->value;
+// 'li'
+
+// Root elements
+echo Root::HTML->value;
+// 'html'
+
+echo Root::HEAD->value;
+// 'head'
+
+echo Root::BODY->value;
+// 'body'
+
+// Table elements
+echo Table::TABLE->value;
+// 'table'
+
+echo Table::THEAD->value;
+// 'thead'
+
+echo Table::TR->value;
+// 'tr'
+
+echo Table::TD->value;
+// 'td'
+```
+
+#### Type safety with interfaces
+
+Use the provided interfaces to ensure type safety in your tag rendering implementations.
+
+```php
+<?php
+
+declare(strict_types=1);
+
+namespace App;
+
+use UIAwesome\Html\Interop\BlockInterface;
+
+/**
+ * Render HTML using any BlockInterface implementation.
+ */
+function renderBlock(BlockInterface $tag, string $content): string
+{
+    return sprintf('<%s>%s</%s>', $tag->value, $content, $tag->value);
+}
+
+echo renderBlock(Block::DIV, 'Content');
+// <div>Content</div>
+
+echo renderBlock(Block::ARTICLE, 'Article content');
+// <article>Article content</article>
+```
+
+#### Filtering and iterating tags
+
+Leverage PHP 8.1+ enum features for filtering and tag operations.
+
+```php
+<?php
+
+declare(strict_types=1);
+
+namespace App;
+
+use UIAwesome\Html\Interop\Block;
+
+// Filter heading elements
+$headings = array_filter(
+    Block::cases(),
+    fn (Block $tag) => str_starts_with($tag->name, 'H'),
+);
+
+foreach ($headings as $heading) {
+    echo $heading->value . PHP_EOL;
+}
+// h1
+// h2
+// h3
+// h4
+// h5
+// h6
+
+// Get all block tag names
+$tagNames = array_map(fn (Block $tag) => $tag->value, Block::cases());
+```
+
+#### Extensibility
+
+Create custom tag collections by implementing the core interfaces backed by string enums.
+
+- `\UIAwesome\Html\Interop\BlockInterface`: For container elements that have content and a closing tag.
+- `\UIAwesome\Html\Interop\InlineInterface`: For text-level elements.
+- `\UIAwesome\Html\Interop\VoidInterface`: For self-closing elements (no closing tag).
+
+You can create custom enums for your specific domain (for example, SVG, MathML, or Web Components) and use them across multiple packages.
+
+```php
+<?php
+
+declare(strict_types=1);
+
+namespace App;
+
+use UIAwesome\Html\Interop\BlockInterface;
+
+enum SvgTag: string implements BlockInterface
+{
+    case SVG = 'svg';
+    case G = 'g';
+    case PATH = 'path';
+    // ... add other SVG block tags as needed
+}
+
+// Now you can use it with any BlockInterface-compatible renderer
+function renderAnyBlock(BlockInterface $tag, string $content): string
+{
+    return "<{$tag->value}>$content</{$tag->value}>";
+}
+
+echo renderAnyBlock(SvgTag::G, '...');
+// <g>...</g>
+```
+
 ## Documentation
 
 For detailed configuration options and advanced usage.

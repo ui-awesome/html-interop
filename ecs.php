@@ -34,6 +34,7 @@ return ECSConfig::configure()
                 'construct',
                 'destruct',
                 'magic',
+                'method_public_abstract',
                 'method_protected_abstract',
                 'method_public',
                 'method_protected',
@@ -65,8 +66,7 @@ return ECSConfig::configure()
     ->withFileExtensions(['php'])
     ->withPaths(
         [
-            __DIR__ . '/src',
-            __DIR__ . '/tests',
+            __DIR__ . '/src'
         ],
     )
     ->withPhpCsFixerSets(perCS20: true)

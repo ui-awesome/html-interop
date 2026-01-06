@@ -36,8 +36,9 @@
         "sort-packages": true
     },
     "scripts": {
-        "check-dependencies": "composer-require-checker",
-        "easy-coding-standard": "ecs check",
-        "psalm": "psalm"
+        "check-dependencies": "./vendor/bin/composer-require-checker check",
+        "ecs": "./vendor/bin/ecs --fix",
+        "rector": "./vendor/bin/rector process src",
+        "static": "./vendor/bin/phpstan --memory-limit=512M"
     }
 }

@@ -11,18 +11,6 @@
 <!-- markdownlint-enable MD041 -->
 
 <p align="center">
-    <a href="https://github.com/ui-awesome/html-interop/actions/workflows/build.yml" target="_blank">
-        <img src="https://img.shields.io/github/actions/workflow/status/ui-awesome/html-interop/build.yml?style=for-the-badge&label=PHPUnit&logo=github" alt="PHPUnit">
-    </a>
-    <a href="https://dashboard.stryker-mutator.io/reports/github.com/ui-awesome/html-interop/main" target="_blank">
-        <img src="https://img.shields.io/endpoint?style=for-the-badge&url=https%3A%2F%2Fbadge-api.stryker-mutator.io%2Fgithub.com%2Fui-awesome%2Fhtml-interop%2Fmain" alt="Mutation Testing">
-    </a>
-    <a href="https://github.com/ui-awesome/html-interop/actions/workflows/static.yml" target="_blank">
-        <img src="https://img.shields.io/github/actions/workflow/status/ui-awesome/html-interop/static.yml?style=for-the-badge&label=PHPStan&logo=github" alt="PHPStan">
-    </a>
-</p>
-
-<p align="center">
     <strong>Common interfaces and type-safe enums for HTML tag interoperability</strong><br>
     <em>Provides standardized contracts and tag collections for block, inline, list, root, table, and void elements.</em>
 </p>
@@ -270,7 +258,6 @@ For detailed configuration options and advanced usage.
 
 ## Quality code
 
-[![Codecov](https://img.shields.io/codecov/c/github/ui-awesome/html-interop.svg?style=for-the-badge&logo=codecov&logoColor=white&label=Coverage)](https://codecov.io/github/ui-awesome/html-interop)
 [![PHPStan Level Max](https://img.shields.io/badge/PHPStan-Level%20Max-4F5D95.svg?style=for-the-badge&logo=github&logoColor=white)](https://github.com/ui-awesome/html-interop/actions/workflows/static.yml)
 [![Super-Linter](https://img.shields.io/github/actions/workflow/status/ui-awesome/html-interop/linter.yml?style=for-the-badge&label=Super-Linter&logo=github)](https://github.com/ui-awesome/html-interop/actions/workflows/linter.yml)
 [![StyleCI](https://img.shields.io/badge/StyleCI-Passed-44CC11.svg?style=for-the-badge&logo=github&logoColor=white)](https://github.styleci.io/repos/779611775?branch=main)

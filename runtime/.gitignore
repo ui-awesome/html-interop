@@ -1,0 +1,4 @@
+# ignore all runtime-generated files and caches
+# preserve the directory structure for git tracking
+*
+!.gitignore

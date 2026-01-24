@@ -1,32 +1,58 @@
 # Testing
 
-## Checking dependencies
+This package provides a consistent set of [Composer](https://getcomposer.org/) scripts for local validation.
 
-This package uses
-[composer-require-checker](https://github.com/maglnet/ComposerRequireChecker) to
-check if all dependencies are correctly defined in `composer.json`.
+Tool references:
 
-To run the checker, execute the following command.
+- [Composer Require Checker](https://github.com/maglnet/ComposerRequireChecker) for dependency definition checks.
+- [Easy Coding Standard (ECS)](https://github.com/easy-coding-standard/easy-coding-standard) for coding standards.
+- [PHPStan](https://phpstan.org/) for static analysis.
+- [Rector](https://github.com/rectorphp/rector) for automated refactoring.
 
-```shell
-composer run check-dependencies
+## Automated refactoring (Rector)
+
+Run Rector to apply automated code refactoring.
+
+```bash
+composer run rector
 ```
 
-## Easy coding standard
+## Coding standards (ECS)
 
-The code is checked with
-[Easy Coding Standard](https://github.com/easy-coding-standard/easy-coding-standard)
-and [PHP CS Fixer](https://github.com/PHP-CS-Fixer/PHP-CS-Fixer). To run it.
+Run Easy Coding Standard (ECS) and apply fixes.
 
-```shell
+```bash
 composer run ecs
 ```
 
-## Static analysis
+## Dependency definition check
 
-The code is statically analyzed with [PHPStan](https://phpstan.org/). To run
-static analysis.
+Verify that runtime dependencies are correctly declared in `composer.json`.
 
-```shell
+```bash
+composer run check-dependencies
+```
+
+## Static analysis (PHPStan)
+
+Run static analysis.
+
+```bash
 composer run static
+``` 
+
+## Passing extra arguments
+
+Composer scripts support forwarding additional arguments using `--`.
+
+Example: run a specific PHPUnit test or filter by name.
+
+```bash
+composer run tests -- --filter SvgTest
+```
+
+Example: run PHPStan with a different memory limit:
+
+```bash
+composer run static -- --memory-limit=512M
 ```

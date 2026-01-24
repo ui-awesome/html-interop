@@ -3,6 +3,7 @@
 ## 0.2.1 Under development
 
 - Bug #4: Update `StyleCI` badge link to the correct repository (@terabytesoftw)
+- Enh #5: Add `php-forge/coding-standard` to development dependencies for code quality checks (@terabytesoftw)
 
 ## 0.2.0 January 6, 2026
 

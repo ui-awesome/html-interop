@@ -45,12 +45,6 @@ composer run static
 
 Composer scripts support forwarding additional arguments using `--`.
 
-Example: run a specific PHPUnit test or filter by name.
-
-```bash
-composer run tests -- --filter SvgTest
-```
-
 Example: run PHPStan with a different memory limit:
 
 ```bash

@@ -39,7 +39,7 @@ Run static analysis.
 
 ```bash
 composer run static
-``` 
+```
 
 ## Passing extra arguments
 

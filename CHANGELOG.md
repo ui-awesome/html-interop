@@ -2,6 +2,8 @@
 
 ## 0.2.1 Under development
 
+- Bug #4: Update `StyleCI` badge link to the correct repository (@terabytesoftw)
+
 ## 0.2.0 January 6, 2026
 
 - Enh #3: Refactor codebase to improve performance (@terabytesoftw)

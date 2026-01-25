@@ -15,12 +15,12 @@ composer run sync-metadata
 
 This command updates the following configuration files:
 
-| File               | Purpose                                      |
-| ------------------ | -------------------------------------------- |
-| `.editorconfig`    | Editor settings and code style configuration |
-| `.gitattributes`   | Git attributes and file handling rules       |
-| `.gitignore`       | Git ignore patterns and exclusions           |
-| `phpstan.neon`     | PHPStan static analysis configuration        |
+| File             | Purpose                                      |
+| ---------------- | -------------------------------------------- |
+| `.editorconfig`  | Editor settings and code style configuration |
+| `.gitattributes` | Git attributes and file handling rules       |
+| `.gitignore`     | Git ignore patterns and exclusions           |
+| `phpstan.neon`   | PHPStan static analysis configuration        |
 
 ### When to Run
 

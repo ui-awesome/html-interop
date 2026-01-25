@@ -1,5 +1,7 @@
 # ChangeLog
 
+## 0.2.2 Under development
+
 ## 0.2.1 January 24, 2026
 
 - Bug #4: Update `StyleCI` badge link to the correct repository (@terabytesoftw)

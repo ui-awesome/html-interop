@@ -14,7 +14,7 @@ Tool references:
 Run Rector to apply automated code refactoring.
 
 ```bash
-composer run rector
+composer rector
 ```
 
 ## Coding standards (ECS)
@@ -22,7 +22,7 @@ composer run rector
 Run Easy Coding Standard (ECS) and apply fixes.
 
 ```bash
-composer run ecs
+composer ecs
 ```
 
 ## Dependency definition check
@@ -30,7 +30,7 @@ composer run ecs
 Verify that runtime dependencies are correctly declared in `composer.json`.
 
 ```bash
-composer run check-dependencies
+composer check-dependencies
 ```
 
 ## Static analysis (PHPStan)
@@ -38,15 +38,15 @@ composer run check-dependencies
 Run static analysis.
 
 ```bash
-composer run static
+composer static
 ```
 
 ## Passing extra arguments
 
 Composer scripts support forwarding additional arguments using `--`.
 
-Example: run PHPStan with a different memory limit:
+Run ECS with a different memory limit.
 
 ```bash
-composer run static -- --memory-limit=512M
+composer ecs -- --memory-limit=512M
 ```

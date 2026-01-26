@@ -2,6 +2,8 @@
 
 ## 0.2.2 Under development
 
+- Bug #6: Update command syntax in `development.md` and `testing.md` for clarity and consistency (@terabytesoftw)
+
 ## 0.2.1 January 24, 2026
 
 - Bug #4: Update `StyleCI` badge link to the correct repository (@terabytesoftw)
@@ -17,4 +19,4 @@
 
 ## 0.1.0 March 5, 2024
 
-- Initial release
+- Enh #1: Initial commit (@terabytesoftw)

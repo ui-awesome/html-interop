@@ -1,5 +1,7 @@
 # ChangeLog
 
+## 0.2.3 Under development
+
 ## 0.2.2 January 28, 2026
 
 - Bug #6: Update command syntax in `development.md` and `testing.md` for clarity and consistency (@terabytesoftw)

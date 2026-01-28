@@ -3,6 +3,7 @@
 ## 0.2.2 Under development
 
 - Bug #6: Update command syntax in `development.md` and `testing.md` for clarity and consistency (@terabytesoftw)
+- Bug #7: Remove redundant ignore rule in `actionlint.yml` configuration and update Rector command in `composer.json` to remove unnecessary 'src' argument (@terabytesoftw)
 
 ## 0.2.1 January 24, 2026
 

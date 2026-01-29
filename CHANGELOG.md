@@ -1,6 +1,8 @@
 # ChangeLog
 
-## 0.2.3 Under development
+## 0.3.0 Under development
+
+- Enh #8: Add `MetadataBlock` and `MetadataVoid` enums for HTML metadata elements to ensure standards compliance and separate contracts by element type (@terabytesoftw)
 
 ## 0.2.2 January 28, 2026
 

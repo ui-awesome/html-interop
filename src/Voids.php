@@ -37,15 +37,6 @@ enum Voids: string implements VoidInterface
     case AREA = 'area';
 
     /**
-     * Case for the `<base>` HTML tag.
-     *
-     * Categorized as metadata content.
-     *
-     * @link https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/base
-     */
-    case BASE = 'base';
-
-    /**
      * Case for the `<br>` HTML tag.
      *
      * Categorized as flow, palpable, phrasing content.
@@ -96,24 +87,6 @@ enum Voids: string implements VoidInterface
      * @link https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/input
      */
     case INPUT = 'input';
-
-    /**
-     * Case for the `<link>` HTML tag.
-     *
-     * Categorized as metadata content.
-     *
-     * @link https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/link
-     */
-    case LINK = 'link';
-
-    /**
-     * Case for the `<meta>` HTML tag.
-     *
-     * Categorized as metadata content.
-     *
-     * @link https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/meta
-     */
-    case META = 'meta';
 
     /**
      * Case for the `<param>` HTML tag.

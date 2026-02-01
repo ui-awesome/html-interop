@@ -1,6 +1,8 @@
 # ChangeLog
 
-## 0.3.1 Under development
+## 0.4.0 Under development
+
+- Bug #10: Move `H1 - H6` classes from `Block` to `Inline` class to better reflect their usage in HTML structure (@terabytesoftw)
 
 ## 0.3.0 January 29, 2026
 

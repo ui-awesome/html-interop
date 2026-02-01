@@ -127,6 +127,60 @@ enum Inline: string implements InlineInterface
     case EM = 'em';
 
     /**
+     * Case for the `<h1>` HTML tag.
+     *
+     * Categorized as flow, heading, and palpable content.
+     *
+     * @link https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/Heading_Elements
+     */
+    case H1 = 'h1';
+
+    /**
+     * Case for the `<h2>` HTML tag.
+     *
+     * Categorized as flow, heading, and palpable content.
+     *
+     * @link https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/Heading_Elements
+     */
+    case H2 = 'h2';
+
+    /**
+     * Case for the `<h3>` HTML tag.
+     *
+     * Categorized as flow, heading, and palpable content.
+     *
+     * @link https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/Heading_Elements
+     */
+    case H3 = 'h3';
+
+    /**
+     * Case for the `<h4>` HTML tag.
+     *
+     * Categorized as flow, heading, and palpable content.
+     *
+     * @link https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/Heading_Elements
+     */
+    case H4 = 'h4';
+
+    /**
+     * Case for the `<h5>` HTML tag.
+     *
+     * Categorized as flow, heading, and palpable content.
+     *
+     * @link https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/Heading_Elements
+     */
+    case H5 = 'h5';
+
+    /**
+     * Case for the `<h6>` HTML tag.
+     *
+     * Categorized as flow, heading, and palpable content.
+     *
+     * @link https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/Heading_Elements
+     */
+    case H6 = 'h6';
+
+    /**
      * Case for the `<i>` HTML tag.
      *
      * Categorized as flow, palpable, and phrasing content.

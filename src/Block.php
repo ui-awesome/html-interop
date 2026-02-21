@@ -141,7 +141,7 @@ enum Block: string implements BlockInterface
     /**
      * Case for the `<form>` HTML tag.
      *
-     * Categorized as flow, form-associated, and palpable content.
+     * Categorized as flow and palpable content.
      *
      * @link https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/form
      */

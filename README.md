@@ -25,7 +25,7 @@
 ### Installation
 
 ```bash
-composer require ui-awesome/html-interop:^0.2
+composer require ui-awesome/html-interop:^0.3
 ```
 
 ### Quick start

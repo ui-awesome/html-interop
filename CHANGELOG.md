@@ -2,6 +2,8 @@
 
 ## 0.3.1 Under development
 
+- Bug #11: Simplify documentation for HTML element enums and enhance clarity on contract implementations (@terabytesoftw)
+
 ## 0.3.0 January 29, 2026
 
 - Enh #8: Add `MetadataBlock` and `MetadataVoid` enums for HTML metadata elements to ensure standards compliance and separate contracts by element type (@terabytesoftw)

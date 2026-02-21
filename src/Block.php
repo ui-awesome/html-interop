@@ -107,7 +107,7 @@ enum Block: string implements BlockInterface
     /**
      * Case for the `<fieldset>` HTML tag.
      *
-     * Categorized as flow, form-associated, and palpable content.
+     * Categorized as flow, and palpable content.
      *
      * @link https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/fieldset
      */
@@ -186,7 +186,7 @@ enum Block: string implements BlockInterface
     /**
      * Case for the `<legend>` HTML tag.
      *
-     * Categorized as flow, form-associated, and palpable content.
+     * Permitted as the first child of a {@see self::FIELDSET} element.
      *
      * @link https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/legend
      */

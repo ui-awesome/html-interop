@@ -1,5 +1,7 @@
 # ChangeLog
 
+## 0.3.2 Under development
+
 ## 0.3.1 February 21, 2026
 
 - Bug #11: Simplify documentation for HTML element enums and enhance clarity on contract implementations (@terabytesoftw)

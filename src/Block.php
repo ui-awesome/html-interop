@@ -5,22 +5,9 @@ declare(strict_types=1);
 namespace UIAwesome\Html\Interop;
 
 /**
- * Represents block-level HTML elements according to the HTML standard specification.
- *
- * Provides a type-safe, standards-compliant set of block-level tag names for use in element rendering, tags and view
- * helpers.
- *
- * Each case corresponds to a valid block-level HTML tag as defined by the W3C and MDN documentation.
- *
- * Key features.
- * - Designed for use in view, tags and components requiring block-level content structure.
- * - Ensures technical consistency with the HTML specification and modern web standards.
- * - Implementation of {@see BlockInterface} for contract adherence.
- * - Integration-ready for tag rendering and element generation APIs.
- * - Strict mapping of block-level HTML tags for semantic markup generation.
+ * Represents block-level HTML element tag names as a backed string enum implementing {@see BlockInterface}.
  *
  * @link https://developer.mozilla.org/en-US/docs/Glossary/Block-level_content
- * {@see BlockInterface} for contract details.
  *
  * @copyright Copyright (C) 2025 Terabytesoftw.
  * @license https://opensource.org/license/bsd-3-clause BSD 3-Clause License.
@@ -120,7 +107,7 @@ enum Block: string implements BlockInterface
     /**
      * Case for the `<fieldset>` HTML tag.
      *
-     * Categorized as flow, form-associated, and palpable content.
+     * Categorized as flow, and palpable content.
      *
      * @link https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/fieldset
      */
@@ -253,6 +240,8 @@ enum Block: string implements BlockInterface
     /**
      * Case for the `<legend>` HTML tag.
      *
+     * Permitted as the first child of a {@see self::FIELDSET} element.
+     *
      * @link https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/legend
      */
     case LEGEND = 'legend';
@@ -330,11 +319,29 @@ enum Block: string implements BlockInterface
     case SECTION = 'section';
 
     /**
+     * Case for the `<select>` HTML tag.
+     *
+     * Categorized as flow, form-associated, palpable, and phrasing content.
+     *
+     * @link https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/select
+     */
+    case SELECT = 'select';
+
+    /**
      * Case for the `<summary>` HTML tag.
      *
      * @link https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/summary
      */
     case SUMMARY = 'summary';
+
+    /**
+     * Case for the `<textarea>` HTML tag.
+     *
+     * Categorized as flow, form-associated, palpable, and phrasing content.
+     *
+     * @link https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/textarea
+     */
+    case TEXT_AREA = 'textarea';
 
     /**
      * Case for the `<video>` HTML tag.

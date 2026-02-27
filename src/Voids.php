@@ -5,14 +5,14 @@ declare(strict_types=1);
 namespace UIAwesome\Html\Interop;
 
 /**
- * Represents void (self-closing) HTML element tag names as a backed string enum implementing {@see VoidInterface}.
+ * Represents void (self-closing) HTML element tag names as a backed string enum.
  *
  * @link https://developer.mozilla.org/en-US/docs/Glossary/Void_element
  *
  * @copyright Copyright (C) 2025 Terabytesoftw.
  * @license https://opensource.org/license/bsd-3-clause BSD 3-Clause License.
  */
-enum Voids: string implements VoidInterface
+enum Voids: string
 {
     /**
      * Case for the `<area>` HTML tag.

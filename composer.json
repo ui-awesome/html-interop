@@ -1,13 +1,13 @@
 {
     "name": "ui-awesome/html-interop",
     "type": "library",
-    "description": "UI Awesome HTML Interop Common Interfaces for PHP.",
+    "description": "UI Awesome HTML Interop backed enums for PHP.",
     "keywords": [
         "ui-awesome",
         "html",
         "interop",
         "common",
-        "interfaces",
+        "enums",
         "php"
     ],
     "license": "BSD-3-Clause",
@@ -35,7 +35,6 @@
         "sort-packages": true
     },
     "scripts": {
-        "check-dependencies": "./vendor/bin/composer-require-checker check",
         "ecs": "./vendor/bin/ecs --fix",
         "rector": "./vendor/bin/rector process",
         "static": "./vendor/bin/phpstan --memory-limit=-1",

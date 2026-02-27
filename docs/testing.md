@@ -4,7 +4,6 @@ This package provides a consistent set of [Composer](https://getcomposer.org/) s
 
 Tool references:
 
-- [Composer Require Checker](https://github.com/maglnet/ComposerRequireChecker) for dependency definition checks.
 - [Easy Coding Standard (ECS)](https://github.com/easy-coding-standard/easy-coding-standard) for coding standards.
 - [PHPStan](https://phpstan.org/) for static analysis.
 - [Rector](https://github.com/rectorphp/rector) for automated refactoring.
@@ -23,14 +22,6 @@ Run Easy Coding Standard (ECS) and apply fixes.
 
 ```bash
 composer ecs
-```
-
-## Dependency definition check
-
-Verify that runtime dependencies are correctly declared in `composer.json`.
-
-```bash
-composer check-dependencies
 ```
 
 ## Static analysis (PHPStan)

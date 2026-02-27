@@ -5,14 +5,14 @@ declare(strict_types=1);
 namespace UIAwesome\Html\Interop;
 
 /**
- * Represents table-related HTML element tag names as a backed string enum implementing {@see BlockInterface}.
+ * Represents table-related HTML element tag names as a backed string enum.
  *
  * @link https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements#table_content
  *
  * @copyright Copyright (C) 2025 Terabytesoftw.
  * @license https://opensource.org/license/bsd-3-clause BSD 3-Clause License.
  */
-enum Table: string implements BlockInterface
+enum Table: string
 {
     /**
      * Case for the `<caption>` HTML tag.

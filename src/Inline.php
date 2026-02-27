@@ -5,14 +5,14 @@ declare(strict_types=1);
 namespace UIAwesome\Html\Interop;
 
 /**
- * Represents inline-level HTML element tag names as a backed string enum implementing {@see InlineInterface}.
+ * Represents inline-level HTML element tag names as a backed string enum.
  *
  * @link https://developer.mozilla.org/en-US/docs/Glossary/Inline-level_content
  *
  * @copyright Copyright (C) 2025 Terabytesoftw.
  * @license https://opensource.org/license/bsd-3-clause BSD 3-Clause License.
  */
-enum Inline: string implements InlineInterface
+enum Inline: string
 {
     /**
      * Case for the `<a>` HTML tag.

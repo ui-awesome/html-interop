@@ -5,14 +5,14 @@ declare(strict_types=1);
 namespace UIAwesome\Html\Interop;
 
 /**
- * Represents block-level HTML element tag names as a backed string enum implementing {@see BlockInterface}.
+ * Represents block-level HTML element tag names as a backed string enum.
  *
  * @link https://developer.mozilla.org/en-US/docs/Glossary/Block-level_content
  *
  * @copyright Copyright (C) 2025 Terabytesoftw.
  * @license https://opensource.org/license/bsd-3-clause BSD 3-Clause License.
  */
-enum Block: string implements BlockInterface
+enum Block: string
 {
     /**
      * Case for the `<address>` HTML tag.

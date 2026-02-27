@@ -5,14 +5,14 @@ declare(strict_types=1);
 namespace UIAwesome\Html\Interop;
 
 /**
- * Represents metadata void HTML element tag names as a backed string enum implementing {@see VoidInterface}.
+ * Represents metadata void HTML element tag names as a backed string enum.
  *
  * @link https://developer.mozilla.org/en-US/docs/Web/HTML/Guides/Content_categories#metadata_content
  *
  * @copyright Copyright (C) 2026 Terabytesoftw.
  * @license https://opensource.org/license/bsd-3-clause BSD 3-Clause License.
  */
-enum MetadataVoid: string implements VoidInterface
+enum MetadataVoid: string
 {
     /**
      * Case for the `<base>` HTML tag.

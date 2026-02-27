@@ -5,14 +5,14 @@ declare(strict_types=1);
 namespace UIAwesome\Html\Interop;
 
 /**
- * Represents list-related HTML element tag names as a backed string enum implementing {@see BlockInterface}.
+ * Represents list-related HTML element tag names as a backed string enum.
  *
  * @link https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements#text_content
  *
  * @copyright Copyright (C) 2025 Terabytesoftw.
  * @license https://opensource.org/license/bsd-3-clause BSD 3-Clause License.
  */
-enum Lists: string implements BlockInterface
+enum Lists: string
 {
     /**
      * Case for the `<dd>` HTML tag.

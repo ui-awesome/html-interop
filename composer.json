@@ -1,13 +1,13 @@
 {
     "name": "ui-awesome/html-interop",
     "type": "library",
-    "description": "UI Awesome HTML Interop Common Interfaces for PHP.",
+    "description": "UI Awesome HTML Interop backed enums for PHP.",
     "keywords": [
         "ui-awesome",
         "html",
         "interop",
         "common",
-        "interfaces",
+        "enums",
         "php"
     ],
     "license": "BSD-3-Clause",

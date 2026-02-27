@@ -11,8 +11,8 @@
 <!-- markdownlint-enable MD041 -->
 
 <p align="center">
-    <strong>Common interfaces and type-safe enums for HTML tag interoperability</strong><br>
-    <em>Provides standardized contracts and tag collections for block, inline, list, root, table, and void elements.</em>
+    <strong>Type-safe string-backed enums for HTML tag interoperability</strong><br>
+    <em>Provides standardized tag collections for block, inline, list, root, table, metadata, and void elements.</em>
 </p>
 
 ## Features
@@ -25,7 +25,7 @@
 ### Installation
 
 ```bash
-composer require ui-awesome/html-interop:^0.3
+composer require ui-awesome/html-interop:^0.4
 ```
 
 ### Quick start
@@ -146,9 +146,9 @@ echo Table::TD->value;
 // 'td'
 ```
 
-#### Type safety with interfaces
+#### Type safety with BackedEnum
 
-Use the provided interfaces to ensure type safety in your tag rendering implementations.
+Use `BackedEnum` to accept any string-backed enum in your rendering implementations.
 
 ```php
 <?php
@@ -157,12 +157,13 @@ declare(strict_types=1);
 
 namespace App;
 
-use UIAwesome\Html\Interop\BlockInterface;
+use BackedEnum;
+use UIAwesome\Html\Interop\Block;
 
 /**
- * Render HTML using any BlockInterface implementation.
+ * Render HTML using any string-backed enum.
  */
-function renderBlock(BlockInterface $tag, string $content): string
+function renderBlock(BackedEnum $tag, string $content): string
 {
     return sprintf('<%s>%s</%s>', $tag->value, $content, $tag->value);
 }
@@ -207,41 +208,16 @@ foreach ($headings as $heading) {
 $tagNames = array_map(fn (Block $tag) => $tag->value, Block::cases());
 ```
 
-#### Extensibility
+#### Contracts package (optional)
 
-Create custom tag collections by implementing the core interfaces backed by string enums.
+If you need contract-based typing, install `ui-awesome/html-contracts` and use its element interfaces.
 
-- `\UIAwesome\Html\Interop\BlockInterface`: For container elements that have content and a closing tag.
-- `\UIAwesome\Html\Interop\InlineInterface`: For text-level elements.
-- `\UIAwesome\Html\Interop\VoidInterface`: For self-closing elements (no closing tag).
+- `UIAwesome\Html\Contracts\Element\BlockInterface`
+- `UIAwesome\Html\Contracts\Element\InlineInterface`
+- `UIAwesome\Html\Contracts\Element\VoidInterface`
 
-You can create custom enums for your specific domain (for example, SVG, MathML, or Web Components) and use them across multiple packages.
-
-```php
-<?php
-
-declare(strict_types=1);
-
-namespace App;
-
-use UIAwesome\Html\Interop\BlockInterface;
-
-enum SvgTag: string implements BlockInterface
-{
-    case SVG = 'svg';
-    case G = 'g';
-    case PATH = 'path';
-    // ... add other SVG block tags as needed
-}
-
-// Now you can use it with any BlockInterface-compatible renderer
-function renderAnyBlock(BlockInterface $tag, string $content): string
-{
-    return "<{$tag->value}>$content</{$tag->value}>";
-}
-
-echo renderAnyBlock(SvgTag::G, '...');
-// <g>...</g>
+```bash
+composer require ui-awesome/html-contracts:^0.1
 ```
 
 ## Documentation

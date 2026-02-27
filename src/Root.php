@@ -5,14 +5,14 @@ declare(strict_types=1);
 namespace UIAwesome\Html\Interop;
 
 /**
- * Represents root-level HTML element tag names as a backed string enum implementing {@see BlockInterface}.
+ * Represents root-level HTML element tag names as a backed string enum.
  *
  * @link https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements#main_root
  *
  * @copyright Copyright (C) 2025 Terabytesoftw.
  * @license https://opensource.org/license/bsd-3-clause BSD 3-Clause License.
  */
-enum Root: string implements BlockInterface
+enum Root: string
 {
     /**
      * Case for the `<body>` HTML tag.

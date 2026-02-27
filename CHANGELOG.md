@@ -1,6 +1,8 @@
 # ChangeLog
 
-## 0.3.2 Under development
+## 0.4.0 Under development
+
+- Bug #12: Move `BlockInterface`, `InlineInterface`, and `VoidInterface` to `ui-awesome/html-contracts` and remove interface implementation from all enums in this package (@terabytesoftw)
 
 ## 0.3.1 February 21, 2026
 

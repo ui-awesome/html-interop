@@ -5,14 +5,14 @@ declare(strict_types=1);
 namespace UIAwesome\Html\Interop;
 
 /**
- * Represents metadata block HTML element tag names as a backed string enum implementing {@see BlockInterface}.
+ * Represents metadata block HTML element tag names as a backed string enum.
  *
  * @link https://developer.mozilla.org/en-US/docs/Web/HTML/Guides/Content_categories#metadata_content
  *
  * @copyright Copyright (C) 2026 Terabytesoftw.
  * @license https://opensource.org/license/bsd-3-clause BSD 3-Clause License.
  */
-enum MetadataBlock: string implements BlockInterface
+enum MetadataBlock: string
 {
     /**
      * Case for the `<noscript>` HTML tag.

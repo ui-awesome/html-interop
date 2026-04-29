@@ -223,7 +223,6 @@ composer require ui-awesome/html-contracts:^0.1
 For detailed configuration options and advanced usage.
 
 - 🧪 [Testing Guide](docs/testing.md)
-- 🛠️ [Development Guide](docs/development.md)
 
 ## Package information
 

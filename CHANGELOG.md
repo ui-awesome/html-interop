@@ -6,6 +6,8 @@ The format is based on Keep a Changelog, and this project adheres to Semantic Ve
 
 ## 0.4.1 Under development
 
+- docs: remove development guide link from `README.md`.
+
 ## 0.4.0 April 29, 2026
 
 - fix: move HTML element interfaces to `ui-awesome/html-contracts` and remove interface implementation from package enums.

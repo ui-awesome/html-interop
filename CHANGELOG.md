@@ -4,6 +4,8 @@ All notable changes to this project will be documented in this file.
 
 The format is based on Keep a Changelog, and this project adheres to Semantic Versioning.
 
+## 0.4.1 Under development
+
 ## 0.4.0 April 29, 2026
 
 - fix: move HTML element interfaces to `ui-awesome/html-contracts` and remove interface implementation from package enums.

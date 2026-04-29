@@ -1,24 +1,30 @@
 {
     "name": "ui-awesome/html-interop",
     "type": "library",
-    "description": "UI Awesome HTML Interop backed enums for PHP.",
+    "description": "Shared backed enums classifying HTML elements by category (block, inline, list, table, void, metadata, root) for the UI Awesome ecosystem.",
     "keywords": [
         "ui-awesome",
         "html",
-        "interop",
-        "common",
+        "html-interop",
         "enums",
+        "backed-enums",
+        "block",
+        "inline",
+        "list",
+        "table",
+        "void",
+        "metadata",
         "php"
     ],
     "license": "BSD-3-Clause",
     "require": {
-        "php": "^8.1"
+        "php": "^8.3"
     },
     "require-dev": {
         "maglnet/composer-require-checker": "^4.1",
         "php-forge/coding-standard": "^0.1",
         "phpstan/phpstan": "^2.1",
-        "phpstan/phpstan-strict-rules": "^2.0.3",
+        "phpstan/phpstan-strict-rules": "^2.0",
         "phpunit/phpunit": "^10.5"
     },
     "autoload": {
@@ -37,13 +43,6 @@
     "scripts": {
         "ecs": "./vendor/bin/ecs --fix",
         "rector": "./vendor/bin/rector process",
-        "static": "./vendor/bin/phpstan --memory-limit=-1",
-        "sync-metadata": [
-            "curl -fsSL -o .editorconfig https://raw.githubusercontent.com/yii2-extensions/template/main/.editorconfig",
-            "curl -fsSL -o .gitattributes https://raw.githubusercontent.com/yii2-extensions/template/main/.gitattributes",
-            "curl -fsSL -o .gitignore https://raw.githubusercontent.com/yii2-extensions/template/main/.gitignore",
-            "curl -fsSL -o .styleci.yml https://raw.githubusercontent.com/yii2-extensions/template/main/.styleci.yml",
-            "curl -fsSL -o phpstan.neon https://raw.githubusercontent.com/yii2-extensions/template/main/phpstan.neon"
-        ]
+        "static": "./vendor/bin/phpstan --memory-limit=-1"
     }
 }

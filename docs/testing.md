@@ -44,4 +44,4 @@ composer ecs -- --memory-limit=512M
 
 ## Next steps
 
-- 📖 [Readme](../README.md)
+- 📖 [README](../README.md)

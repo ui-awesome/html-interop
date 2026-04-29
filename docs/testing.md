@@ -41,3 +41,7 @@ Run ECS with a different memory limit.
 ```bash
 composer ecs -- --memory-limit=512M
 ```
+
+## Next steps
+
+- 📖 [Readme](../README.md)

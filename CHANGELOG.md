@@ -9,6 +9,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - docs: remove development guide link from `README.md`.
 - chore: migrate to `yii2-extensions/scaffold` consumer model with `php-forge/baseline` and `php-forge/coding-standard ^0.3@dev`.
+- docs: Correct image source order in `README.md` for feature overview.
 
 ## 0.4.0 April 29, 2026
 

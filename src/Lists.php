@@ -7,17 +7,14 @@ namespace UIAwesome\Html\Interop;
 /**
  * Represents list-related HTML element tag names as a backed string enum.
  *
- * @link https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements#text_content
- *
- * @copyright Copyright (C) 2025 Terabytesoftw.
- * @license https://opensource.org/license/bsd-3-clause BSD 3-Clause License.
+ * @see https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements#text_content
  */
 enum Lists: string
 {
     /**
      * Case for the `<dd>` HTML tag.
      *
-     * @link https://developer.mozilla.org/en-US/docs/Web/HTML/Element/dd
+     * @see https://developer.mozilla.org/en-US/docs/Web/HTML/Element/dd
      */
     case DD = 'dd';
 
@@ -26,21 +23,21 @@ enum Lists: string
      *
      * Categorized as flow and palpable content.
      *
-     * @link https://developer.mozilla.org/en-US/docs/Web/HTML/Element/dl
+     * @see https://developer.mozilla.org/en-US/docs/Web/HTML/Element/dl
      */
     case DL = 'dl';
 
     /**
      * Case for the `<dt>` HTML tag.
      *
-     * @link https://developer.mozilla.org/en-US/docs/Web/HTML/Element/dt
+     * @see https://developer.mozilla.org/en-US/docs/Web/HTML/Element/dt
      */
     case DT = 'dt';
 
     /**
      * Case for the `<li>` HTML tag.
      *
-     * @link https://developer.mozilla.org/en-US/docs/Web/HTML/Element/li
+     * @see https://developer.mozilla.org/en-US/docs/Web/HTML/Element/li
      */
     case LI = 'li';
 
@@ -49,7 +46,7 @@ enum Lists: string
      *
      * Categorized as flow and palpable content.
      *
-     * @link https://developer.mozilla.org/en-US/docs/Web/HTML/Element/ol
+     * @see https://developer.mozilla.org/en-US/docs/Web/HTML/Element/ol
      */
     case OL = 'ol';
 
@@ -58,7 +55,7 @@ enum Lists: string
      *
      * Categorized as flow and palpable content.
      *
-     * @link https://developer.mozilla.org/en-US/docs/Web/HTML/Element/ul
+     * @see https://developer.mozilla.org/en-US/docs/Web/HTML/Element/ul
      */
     case UL = 'ul';
 }

@@ -7,10 +7,7 @@ namespace UIAwesome\Html\Interop;
 /**
  * Represents metadata void HTML element tag names as a backed string enum.
  *
- * @link https://developer.mozilla.org/en-US/docs/Web/HTML/Guides/Content_categories#metadata_content
- *
- * @copyright Copyright (C) 2026 Terabytesoftw.
- * @license https://opensource.org/license/bsd-3-clause BSD 3-Clause License.
+ * @see https://developer.mozilla.org/en-US/docs/Web/HTML/Guides/Content_categories#metadata_content
  */
 enum MetadataVoid: string
 {
@@ -19,7 +16,7 @@ enum MetadataVoid: string
      *
      * Categorized as metadata content.
      *
-     * @link https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/base
+     * @see https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/base
      */
     case BASE = 'base';
 
@@ -28,7 +25,7 @@ enum MetadataVoid: string
      *
      * Categorized as metadata content.
      *
-     * @link https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/link
+     * @see https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/link
      */
     case LINK = 'link';
 
@@ -37,7 +34,7 @@ enum MetadataVoid: string
      *
      * Categorized as metadata content.
      *
-     * @link https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/meta
+     * @see https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/meta
      */
     case META = 'meta';
 }

@@ -7,10 +7,7 @@ namespace UIAwesome\Html\Interop;
 /**
  * Represents metadata block HTML element tag names as a backed string enum.
  *
- * @link https://developer.mozilla.org/en-US/docs/Web/HTML/Guides/Content_categories#metadata_content
- *
- * @copyright Copyright (C) 2026 Terabytesoftw.
- * @license https://opensource.org/license/bsd-3-clause BSD 3-Clause License.
+ * @see https://developer.mozilla.org/en-US/docs/Web/HTML/Guides/Content_categories#metadata_content
  */
 enum MetadataBlock: string
 {
@@ -19,7 +16,7 @@ enum MetadataBlock: string
      *
      * Categorized as metadata, flow, and phrasing content.
      *
-     * @link https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/noscript
+     * @see https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/noscript
      */
     case NOSCRIPT = 'noscript';
 
@@ -28,7 +25,7 @@ enum MetadataBlock: string
      *
      * Categorized as metadata, flow, and phrasing content.
      *
-     * @link https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/script
+     * @see https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/script
      */
     case SCRIPT = 'script';
 
@@ -37,7 +34,7 @@ enum MetadataBlock: string
      *
      * Categorized as metadata content.
      *
-     * @link https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/style
+     * @see https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/style
      */
     case STYLE = 'style';
 
@@ -46,7 +43,7 @@ enum MetadataBlock: string
      *
      * Categorized as metadata, flow, and phrasing content.
      *
-     * @link https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/template
+     * @see https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/template
      */
     case TEMPLATE = 'template';
 
@@ -55,7 +52,7 @@ enum MetadataBlock: string
      *
      * Categorized as metadata content.
      *
-     * @link https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/title
+     * @see https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/title
      */
     case TITLE = 'title';
 }

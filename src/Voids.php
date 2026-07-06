@@ -7,10 +7,7 @@ namespace UIAwesome\Html\Interop;
 /**
  * Represents void (self-closing) HTML element tag names as a backed string enum.
  *
- * @link https://developer.mozilla.org/en-US/docs/Glossary/Void_element
- *
- * @copyright Copyright (C) 2025 Terabytesoftw.
- * @license https://opensource.org/license/bsd-3-clause BSD 3-Clause License.
+ * @see https://developer.mozilla.org/en-US/docs/Glossary/Void_element
  */
 enum Voids: string
 {
@@ -19,7 +16,7 @@ enum Voids: string
      *
      * Categorized as flow, phrasing content.
      *
-     * @link https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/area
+     * @see https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/area
      */
     case AREA = 'area';
 
@@ -28,14 +25,14 @@ enum Voids: string
      *
      * Categorized as flow, palpable, phrasing content.
      *
-     * @link https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/br
+     * @see https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/br
      */
     case BR = 'br';
 
     /**
      * Case for the `<col>` HTML tag.
      *
-     * @link https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/col
+     * @see https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/col
      */
     case COL = 'col';
 
@@ -44,7 +41,7 @@ enum Voids: string
      *
      * Categorized as flow, embedded, interactive, palpable, and phrasing content.
      *
-     * @link https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/embed
+     * @see https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/embed
      */
     case EMBED = 'embed';
 
@@ -53,7 +50,7 @@ enum Voids: string
      *
      * Categorized as flow content.
      *
-     * @link https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/hr
+     * @see https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/hr
      */
     case HR = 'hr';
 
@@ -62,7 +59,7 @@ enum Voids: string
      *
      * Categorized as flow, embedded, palpable, and phrasing content.
      *
-     * @link https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/img
+     * @see https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/img
      */
     case IMG = 'img';
 
@@ -71,7 +68,7 @@ enum Voids: string
      *
      * Categorized as flow, form-associated, interactive, palpable, and phrasing content.
      *
-     * @link https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/input
+     * @see https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/input
      */
     case INPUT = 'input';
 
@@ -80,21 +77,21 @@ enum Voids: string
      *
      * Categorized as metadata content.
      *
-     * @link https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/param
+     * @see https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/param
      */
     case PARAM = 'param';
 
     /**
      * Case for the `<source>` HTML tag.
      *
-     * @link https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/source
+     * @see https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/source
      */
     case SOURCE = 'source';
 
     /**
      * Case for the `<track>` HTML tag.
      *
-     * @link https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/track
+     * @see https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/track
      */
     case TRACK = 'track';
 
@@ -103,7 +100,7 @@ enum Voids: string
      *
      * Categorized as flow, phrasing content.
      *
-     * @link https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/wbr
+     * @see https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/wbr
      */
     case WBR = 'wbr';
 }

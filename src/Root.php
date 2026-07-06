@@ -7,10 +7,7 @@ namespace UIAwesome\Html\Interop;
 /**
  * Represents root-level HTML element tag names as a backed string enum.
  *
- * @link https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements#main_root
- *
- * @copyright Copyright (C) 2025 Terabytesoftw.
- * @license https://opensource.org/license/bsd-3-clause BSD 3-Clause License.
+ * @see https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements#main_root
  */
 enum Root: string
 {
@@ -19,7 +16,7 @@ enum Root: string
      *
      * Represents the content of an HTML document.
      *
-     * @link https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/body
+     * @see https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/body
      */
     case BODY = 'body';
 
@@ -28,7 +25,7 @@ enum Root: string
      *
      * Contains machine-readable information (metadata) about the document.
      *
-     * @link https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/head
+     * @see https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/head
      */
     case HEAD = 'head';
 
@@ -37,7 +34,7 @@ enum Root: string
      *
      * Represents the root (top-level element) of an HTML document.
      *
-     * @link https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/html
+     * @see https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/html
      */
     case HTML = 'html';
 }

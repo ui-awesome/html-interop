@@ -7,10 +7,7 @@ namespace UIAwesome\Html\Interop;
 /**
  * Represents block-level HTML element tag names as a backed string enum.
  *
- * @link https://developer.mozilla.org/en-US/docs/Glossary/Block-level_content
- *
- * @copyright Copyright (C) 2025 Terabytesoftw.
- * @license https://opensource.org/license/bsd-3-clause BSD 3-Clause License.
+ * @see https://developer.mozilla.org/en-US/docs/Glossary/Block-level_content
  */
 enum Block: string
 {
@@ -19,7 +16,7 @@ enum Block: string
      *
      * Categorized as flow and palpable content.
      *
-     * @link https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/address
+     * @see https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/address
      */
     case ADDRESS = 'address';
 
@@ -28,7 +25,7 @@ enum Block: string
      *
      * Categorized as flow, palpable, and sectioning content.
      *
-     * @link https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/article
+     * @see https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/article
      */
     case ARTICLE = 'article';
 
@@ -37,7 +34,7 @@ enum Block: string
      *
      * Categorized as flow, palpable, and sectioning content.
      *
-     * @link https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/aside
+     * @see https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/aside
      */
     case ASIDE = 'aside';
 
@@ -46,7 +43,7 @@ enum Block: string
      *
      * Categorized as embedded, flow, palpable, and phrasing content.
      *
-     * @link https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/audio
+     * @see https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/audio
      */
     case AUDIO = 'audio';
 
@@ -55,7 +52,7 @@ enum Block: string
      *
      * Categorized as flow and palpable content.
      *
-     * @link https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/blockquote
+     * @see https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/blockquote
      */
     case BLOCKQUOTE = 'blockquote';
 
@@ -64,7 +61,7 @@ enum Block: string
      *
      * Categorized as embedded, flow, and palpable content.
      *
-     * @link https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/canvas
+     * @see https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/canvas
      */
     case CANVAS = 'canvas';
 
@@ -73,7 +70,7 @@ enum Block: string
      *
      * Categorized as flow content.
      *
-     * @link https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/del
+     * @see https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/del
      */
     case DEL = 'del';
 
@@ -82,7 +79,7 @@ enum Block: string
      *
      * Categorized as flow and palpable content.
      *
-     * @link https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/details
+     * @see https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/details
      */
     case DETAILS = 'details';
 
@@ -91,7 +88,7 @@ enum Block: string
      *
      * Categorized as flow and palpable content.
      *
-     * @link https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/dialog
+     * @see https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/dialog
      */
     case DIALOG = 'dialog';
 
@@ -100,7 +97,7 @@ enum Block: string
      *
      * Categorized as flow and palpable content.
      *
-     * @link https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/div
+     * @see https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/div
      */
     case DIV = 'div';
 
@@ -109,14 +106,14 @@ enum Block: string
      *
      * Categorized as flow, and palpable content.
      *
-     * @link https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/fieldset
+     * @see https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/fieldset
      */
     case FIELDSET = 'fieldset';
 
     /**
      * Case for the `<figcaption>` HTML tag.
      *
-     * @link https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/figcaption
+     * @see https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/figcaption
      */
     case FIGCAPTION = 'figcaption';
 
@@ -125,7 +122,7 @@ enum Block: string
      *
      * Categorized as flow and palpable content.
      *
-     * @link https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/figure
+     * @see https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/figure
      */
     case FIGURE = 'figure';
 
@@ -134,7 +131,7 @@ enum Block: string
      *
      * Categorized as flow and palpable content.
      *
-     * @link https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/footer
+     * @see https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/footer
      */
     case FOOTER = 'footer';
 
@@ -143,7 +140,7 @@ enum Block: string
      *
      * Categorized as flow and palpable content.
      *
-     * @link https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/form
+     * @see https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/form
      */
     case FORM = 'form';
 
@@ -152,7 +149,7 @@ enum Block: string
      *
      * Categorized as flow, heading, and palpable content.
      *
-     * @link https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/Heading_Elements
+     * @see https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/Heading_Elements
      */
     case H1 = 'h1';
 
@@ -161,7 +158,7 @@ enum Block: string
      *
      * Categorized as flow, heading, and palpable content.
      *
-     * @link https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/Heading_Elements
+     * @see https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/Heading_Elements
      */
     case H2 = 'h2';
 
@@ -170,7 +167,7 @@ enum Block: string
      *
      * Categorized as flow, heading, and palpable content.
      *
-     * @link https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/Heading_Elements
+     * @see https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/Heading_Elements
      */
     case H3 = 'h3';
 
@@ -179,7 +176,7 @@ enum Block: string
      *
      * Categorized as flow, heading, and palpable content.
      *
-     * @link https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/Heading_Elements
+     * @see https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/Heading_Elements
      */
     case H4 = 'h4';
 
@@ -188,7 +185,7 @@ enum Block: string
      *
      * Categorized as flow, heading, and palpable content.
      *
-     * @link https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/Heading_Elements
+     * @see https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/Heading_Elements
      */
     case H5 = 'h5';
 
@@ -197,7 +194,7 @@ enum Block: string
      *
      * Categorized as flow, heading, and palpable content.
      *
-     * @link https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/Heading_Elements
+     * @see https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/Heading_Elements
      */
     case H6 = 'h6';
 
@@ -206,7 +203,7 @@ enum Block: string
      *
      * Categorized as flow and palpable content.
      *
-     * @link https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/header
+     * @see https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/header
      */
     case HEADER = 'header';
 
@@ -215,7 +212,7 @@ enum Block: string
      *
      * Categorized as flow, heading, and palpable content.
      *
-     * @link https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/hgroup
+     * @see https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/hgroup
      */
     case HGROUP = 'hgroup';
 
@@ -224,7 +221,7 @@ enum Block: string
      *
      * Categorized as embedded, flow, interactive, palpable, and phrasing content.
      *
-     * @link https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/iframe
+     * @see https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/iframe
      */
     case IFRAME = 'iframe';
 
@@ -233,7 +230,7 @@ enum Block: string
      *
      * Categorized as flow and palpable content.
      *
-     * @link https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/ins
+     * @see https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/ins
      */
     case INS = 'ins';
 
@@ -242,7 +239,7 @@ enum Block: string
      *
      * Permitted as the first child of a {@see self::FIELDSET} element.
      *
-     * @link https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/legend
+     * @see https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/legend
      */
     case LEGEND = 'legend';
 
@@ -251,7 +248,7 @@ enum Block: string
      *
      * Categorized as flow and palpable content.
      *
-     * @link https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/main
+     * @see https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/main
      */
     case MAIN = 'main';
 
@@ -260,7 +257,7 @@ enum Block: string
      *
      * Categorized as flow and palpable content.
      *
-     * @link https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/menu
+     * @see https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/menu
      */
     case MENU = 'menu';
 
@@ -269,7 +266,7 @@ enum Block: string
      *
      * Categorized as flow, palpable, and sectioning content.
      *
-     * @link https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/nav
+     * @see https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/nav
      */
     case NAV = 'nav';
 
@@ -278,7 +275,7 @@ enum Block: string
      *
      * Categorized as embedded, flow, form-associated, palpable, and phrasing content.
      *
-     * @link https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/object
+     * @see https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/object
      */
     case OBJECT = 'object';
 
@@ -287,7 +284,7 @@ enum Block: string
      *
      * Categorized as flow and palpable content.
      *
-     * @link https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/p
+     * @see https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/p
      */
     case P = 'p';
 
@@ -296,7 +293,7 @@ enum Block: string
      *
      * Categorized as flow and palpable content.
      *
-     * @link https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/pre
+     * @see https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/pre
      */
     case PRE = 'pre';
 
@@ -305,7 +302,7 @@ enum Block: string
      *
      * Categorized as flow content.
      *
-     * @link https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/search
+     * @see https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/search
      */
     case SEARCH = 'search';
 
@@ -314,7 +311,7 @@ enum Block: string
      *
      * Categorized as flow, palpable, and sectioning content.
      *
-     * @link https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/section
+     * @see https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/section
      */
     case SECTION = 'section';
 
@@ -323,14 +320,14 @@ enum Block: string
      *
      * Categorized as flow, form-associated, palpable, and phrasing content.
      *
-     * @link https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/select
+     * @see https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/select
      */
     case SELECT = 'select';
 
     /**
      * Case for the `<summary>` HTML tag.
      *
-     * @link https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/summary
+     * @see https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/summary
      */
     case SUMMARY = 'summary';
 
@@ -339,7 +336,7 @@ enum Block: string
      *
      * Categorized as flow, form-associated, palpable, and phrasing content.
      *
-     * @link https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/textarea
+     * @see https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/textarea
      */
     case TEXT_AREA = 'textarea';
 
@@ -348,7 +345,7 @@ enum Block: string
      *
      * Categorized as embedded, flow, interactive, palpable, and phrasing content.
      *
-     * @link https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/video
+     * @see https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/video
      */
     case VIDEO = 'video';
 }

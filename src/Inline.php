@@ -7,10 +7,7 @@ namespace UIAwesome\Html\Interop;
 /**
  * Represents inline-level HTML element tag names as a backed string enum.
  *
- * @link https://developer.mozilla.org/en-US/docs/Glossary/Inline-level_content
- *
- * @copyright Copyright (C) 2025 Terabytesoftw.
- * @license https://opensource.org/license/bsd-3-clause BSD 3-Clause License.
+ * @see https://developer.mozilla.org/en-US/docs/Glossary/Inline-level_content
  */
 enum Inline: string
 {
@@ -19,7 +16,7 @@ enum Inline: string
      *
      * Categorized as flow, interactive, palpable, and phrasing content.
      *
-     * @link https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/a
+     * @see https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/a
      */
     case A = 'a';
 
@@ -28,7 +25,7 @@ enum Inline: string
      *
      * Categorized as flow, palpable, and phrasing content.
      *
-     * @link https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/abbr
+     * @see https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/abbr
      */
     case ABBR = 'abbr';
 
@@ -37,7 +34,7 @@ enum Inline: string
      *
      * Categorized as flow, palpable, and phrasing content.
      *
-     * @link https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/b
+     * @see https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/b
      */
     case B = 'b';
 
@@ -46,7 +43,7 @@ enum Inline: string
      *
      * Categorized as flow, palpable, and phrasing content.
      *
-     * @link https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/bdi
+     * @see https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/bdi
      */
     case BDI = 'bdi';
 
@@ -55,7 +52,7 @@ enum Inline: string
      *
      * Categorized as flow, palpable, and phrasing content.
      *
-     * @link https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/bdo
+     * @see https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/bdo
      */
     case BDO = 'bdo';
 
@@ -64,7 +61,7 @@ enum Inline: string
      *
      * Categorized as flow, form-associated, interactive, palpable, and phrasing content.
      *
-     * @link https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/button
+     * @see https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/button
      */
     case BUTTON = 'button';
 
@@ -73,7 +70,7 @@ enum Inline: string
      *
      * Categorized as flow, palpable, and phrasing content.
      *
-     * @link https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/cite
+     * @see https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/cite
      */
     case CITE = 'cite';
 
@@ -82,7 +79,7 @@ enum Inline: string
      *
      * Categorized as flow, palpable, and phrasing content.
      *
-     * @link https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/code
+     * @see https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/code
      */
     case CODE = 'code';
 
@@ -91,7 +88,7 @@ enum Inline: string
      *
      * Categorized as flow, palpable, and phrasing content.
      *
-     * @link https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/data
+     * @see https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/data
      */
     case DATA = 'data';
 
@@ -100,7 +97,7 @@ enum Inline: string
      *
      * Categorized as flow, palpable, and phrasing content.
      *
-     * @link https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/dfn
+     * @see https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/dfn
      */
     case DFN = 'dfn';
 
@@ -109,7 +106,7 @@ enum Inline: string
      *
      * Categorized as flow, palpable, and phrasing content.
      *
-     * @link https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/em
+     * @see https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/em
      */
     case EM = 'em';
 
@@ -118,7 +115,7 @@ enum Inline: string
      *
      * Categorized as flow, palpable, and phrasing content.
      *
-     * @link https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/i
+     * @see https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/i
      */
     case I = 'i';
 
@@ -127,7 +124,7 @@ enum Inline: string
      *
      * Categorized as flow, palpable, and phrasing content.
      *
-     * @link https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/kbd
+     * @see https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/kbd
      */
     case KBD = 'kbd';
 
@@ -136,7 +133,7 @@ enum Inline: string
      *
      * Categorized as flow, form-associated, interactive, palpable, and phrasing content.
      *
-     * @link https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/label
+     * @see https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/label
      */
     case LABEL = 'label';
 
@@ -145,7 +142,7 @@ enum Inline: string
      *
      * Categorized as flow, palpable, and phrasing content.
      *
-     * @link https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/map
+     * @see https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/map
      */
     case MAP = 'map';
 
@@ -154,7 +151,7 @@ enum Inline: string
      *
      * Categorized as flow, palpable, and phrasing content.
      *
-     * @link https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/mark
+     * @see https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/mark
      */
     case MARK = 'mark';
 
@@ -163,7 +160,7 @@ enum Inline: string
      *
      * Categorized as flow, form-associated, palpable, and phrasing content.
      *
-     * @link https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/meter
+     * @see https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/meter
      */
     case METER = 'meter';
 
@@ -172,7 +169,7 @@ enum Inline: string
      *
      * Categorized as flow, form-associated, palpable, and phrasing content.
      *
-     * @link https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/output
+     * @see https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/output
      */
     case OUTPUT = 'output';
 
@@ -181,7 +178,7 @@ enum Inline: string
      *
      * Categorized as embedded, flow, and palpable content.
      *
-     * @link https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/picture
+     * @see https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/picture
      */
     case PICTURE = 'picture';
 
@@ -190,7 +187,7 @@ enum Inline: string
      *
      * Categorized as flow, form-associated, palpable, and phrasing content.
      *
-     * @link https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/progress
+     * @see https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/progress
      */
     case PROGRESS = 'progress';
 
@@ -199,7 +196,7 @@ enum Inline: string
      *
      * Categorized as flow, palpable, and phrasing content.
      *
-     * @link https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/q
+     * @see https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/q
      */
     case Q = 'q';
 
@@ -208,7 +205,7 @@ enum Inline: string
      *
      * Categorized as phrasing content.
      *
-     * @link https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/rp
+     * @see https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/rp
      */
     case RP = 'rp';
 
@@ -217,7 +214,7 @@ enum Inline: string
      *
      * Categorized as phrasing content.
      *
-     * @link https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/rt
+     * @see https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/rt
      */
     case RT = 'rt';
 
@@ -226,7 +223,7 @@ enum Inline: string
      *
      * Categorized as flow, palpable, and phrasing content.
      *
-     * @link https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/ruby
+     * @see https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/ruby
      */
     case RUBY = 'ruby';
 
@@ -235,7 +232,7 @@ enum Inline: string
      *
      * Categorized as flow, palpable, and phrasing content.
      *
-     * @link https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/s
+     * @see https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/s
      */
     case S = 's';
 
@@ -244,7 +241,7 @@ enum Inline: string
      *
      * Categorized as flow, palpable, and phrasing content.
      *
-     * @link https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/samp
+     * @see https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/samp
      */
     case SAMP = 'samp';
 
@@ -253,7 +250,7 @@ enum Inline: string
      *
      * Categorized as flow, palpable, and phrasing content.
      *
-     * @link https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/small
+     * @see https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/small
      */
     case SMALL = 'small';
 
@@ -262,7 +259,7 @@ enum Inline: string
      *
      * Categorized as flow, palpable, and phrasing content.
      *
-     * @link https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/span
+     * @see https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/span
      */
     case SPAN = 'span';
 
@@ -271,7 +268,7 @@ enum Inline: string
      *
      * Categorized as flow, palpable, and phrasing content.
      *
-     * @link https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/strong
+     * @see https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/strong
      */
     case STRONG = 'strong';
 
@@ -280,7 +277,7 @@ enum Inline: string
      *
      * Categorized as flow, palpable, and phrasing content.
      *
-     * @link https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/sub
+     * @see https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/sub
      */
     case SUB = 'sub';
 
@@ -289,7 +286,7 @@ enum Inline: string
      *
      * Categorized as flow, palpable, and phrasing content.
      *
-     * @link https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/sup
+     * @see https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/sup
      */
     case SUP = 'sup';
 
@@ -298,7 +295,7 @@ enum Inline: string
      *
      * Categorized as flow, palpable, and phrasing content.
      *
-     * @link https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/time
+     * @see https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/time
      */
     case TIME = 'time';
 
@@ -307,7 +304,7 @@ enum Inline: string
      *
      * Categorized as flow, palpable, and phrasing content.
      *
-     * @link https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/u
+     * @see https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/u
      */
     case U = 'u';
 
@@ -316,7 +313,7 @@ enum Inline: string
      *
      * Categorized as flow, palpable, and phrasing content.
      *
-     * @link https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/var
+     * @see https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/var
      */
     case VAR = 'var';
 }

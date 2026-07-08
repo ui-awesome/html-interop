@@ -14,6 +14,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - docs: update link to repository in `README.md`.
 - chore: update dependencies and configuration files.
 - ci: replace Super-Linter with reusable quality and security workflows, pin reusable workflow references, group Dependabot updates, and refresh project status badges.
+- chore: update codespell configuration and bump baseline version to `0.1.7`.
 
 ## 0.4.0 April 29, 2026
 

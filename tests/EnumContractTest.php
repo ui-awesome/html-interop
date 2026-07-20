@@ -1,0 +1,85 @@
+<?php
+
+declare(strict_types=1);
+
+namespace UIAwesome\Html\Interop\Tests;
+
+use BackedEnum;
+use PHPUnit\Framework\Attributes\DataProviderExternal;
+use PHPUnit\Framework\TestCase;
+use ReflectionEnum;
+use UIAwesome\Html\Interop\Tests\Provider\EnumContractProvider;
+
+/**
+ * Unit tests for the {@see BackedEnum} contract.
+ *
+ * {@see EnumContractProvider} for test case data providers.
+ */
+final class EnumContractTest extends TestCase
+{
+    /**
+     * @param class-string<BackedEnum> $enum
+     * @param array<string, string> $expectedCases
+     */
+    #[DataProviderExternal(EnumContractProvider::class, 'contracts')]
+    public function testCasesHaveTheExpectedNamesAndBackedValues(string $enum, array $expectedCases): void
+    {
+        $actualCases = [];
+
+        foreach ((new ReflectionEnum($enum))->getCases() as $case) {
+            $value = $case->getValue();
+
+            if (!$value instanceof BackedEnum) {
+                self::fail(
+                    "{$enum} must be a backed enum.",
+                );
+            }
+
+            $actualCases[$case->getName()] = $value->value;
+        }
+
+        self::assertSame(
+            $expectedCases,
+            $actualCases,
+            'Should preserve every public case name and backed value.',
+        );
+    }
+
+    /**
+     * @param class-string<BackedEnum> $enum
+     */
+    #[DataProviderExternal(EnumContractProvider::class, 'validValues')]
+    public function testFromAndTryFromReturnTheExpectedCase(string $enum, string $name, string $value): void
+    {
+        $expectedCase = (new ReflectionEnum($enum))->getCase($name)->getValue();
+
+        if (!$expectedCase instanceof BackedEnum) {
+            self::fail(
+                "{$enum} must be a backed enum.",
+            );
+        }
+
+        self::assertSame(
+            $expectedCase,
+            $enum::from($value),
+            'Should resolve the expected public case.',
+        );
+        self::assertSame(
+            $expectedCase,
+            $enum::tryFrom($value),
+            'Should resolve the expected public case.',
+        );
+    }
+
+    /**
+     * @param class-string<BackedEnum> $enum
+     */
+    #[DataProviderExternal(EnumContractProvider::class, 'invalidValues')]
+    public function testTryFromReturnsNullForAnUnknownValue(string $enum, string $value): void
+    {
+        self::assertNull(
+            $enum::tryFrom($value),
+            'Should return no case for an unknown backed value.',
+        );
+    }
+}

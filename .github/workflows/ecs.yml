@@ -3,6 +3,7 @@ on:
   pull_request: &ignore-paths
     paths-ignore:
       - ".gitattributes"
+      - ".github/dependabot.yml"
       - ".gitignore"
       - "CHANGELOG.md"
       - "docs/**"

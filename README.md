@@ -9,6 +9,9 @@
 <!-- markdownlint-enable MD041 -->
 
 <p align="center">
+    <a href="https://github.com/ui-awesome/html-interop/actions/workflows/build.yml" target="_blank">
+        <img src="https://img.shields.io/github/actions/workflow/status/ui-awesome/html-interop/build.yml?style=for-the-badge&label=PHPUnit&logo=github" alt="PHPUnit">
+    </a>
     <a href="https://github.com/ui-awesome/html-interop/actions/workflows/static.yml" target="_blank">
         <img src="https://img.shields.io/github/actions/workflow/status/ui-awesome/html-interop/static.yml?style=for-the-badge&label=PHPStan&logo=github" alt="PHPStan">
     </a>

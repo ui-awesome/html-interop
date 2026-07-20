@@ -15,7 +15,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - chore: update dependencies and configuration files.
 - ci: replace Super-Linter with reusable quality and security workflows, pin reusable workflow references, group Dependabot updates, and refresh project status badges.
 - chore: update codespell configuration and bump baseline version to `0.1.7`.
-- test: add PHPUnit enum contract coverage, Infection mutation testing, and project status badges.
+- test: add PHPUnit contract coverage for public enum cases, backed values, and lookup behavior.
 
 ## 0.4.0 April 29, 2026
 

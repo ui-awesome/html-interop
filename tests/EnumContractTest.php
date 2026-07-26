@@ -10,6 +10,7 @@ use PHPUnit\Framework\TestCase;
 use ReflectionEnum;
 use UIAwesome\Html\Interop\Tests\Provider\EnumContractProvider;
 use ValueError;
+
 use function sprintf;
 
 /**

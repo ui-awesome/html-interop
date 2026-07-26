@@ -9,6 +9,9 @@ use PHPUnit\Framework\Attributes\DataProviderExternal;
 use PHPUnit\Framework\TestCase;
 use ReflectionEnum;
 use UIAwesome\Html\Interop\Tests\Provider\EnumContractProvider;
+use ValueError;
+
+use function sprintf;
 
 /**
  * Unit tests for the {@see BackedEnum} contract.
@@ -69,6 +72,20 @@ final class EnumContractTest extends TestCase
             $enum::tryFrom($value),
             'Should resolve the expected public case.',
         );
+    }
+
+    /**
+     * @param class-string<BackedEnum> $enum
+     */
+    #[DataProviderExternal(EnumContractProvider::class, 'invalidValues')]
+    public function testThrowValueErrorForAnUnknownBackedValue(string $enum, string $value): void
+    {
+        $this->expectException(ValueError::class);
+        $this->expectExceptionMessage(
+            sprintf('"%s" is not a valid backing value for enum %s', $value, $enum),
+        );
+
+        $enum::from($value);
     }
 
     /**

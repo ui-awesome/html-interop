@@ -7,6 +7,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## 0.4.2 Under development
 
+- chore: remove the unused Composer require checker development dependency (the package ships only standalone enums, so the tool finds no used symbols and cannot run).
+- test: assert that every public enum throws ValueError for an unknown backed value in from().
+
 ## 0.4.1 July 20, 2026
 
 - docs: remove development guide link from `README.md`.

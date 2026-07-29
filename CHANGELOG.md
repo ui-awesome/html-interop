@@ -5,7 +5,7 @@ All notable changes to this project will be documented in this file.
 The format is based on [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## 0.4.2 Under development
+## 0.4.2 July 29, 2026
 
 - chore: remove the unused Composer require checker development dependency (the package ships only standalone enums, so the tool finds no used symbols and cannot run).
 - test: assert that every public enum throws ValueError for an unknown backed value in from().

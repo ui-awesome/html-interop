@@ -29,7 +29,7 @@
         "php": "^8.3"
     },
     "require-dev": {
-        "php-forge/baseline": "^0.1",
+        "php-forge/baseline": "^0.2",
         "php-forge/coding-standard": "^0.3",
         "phpstan/phpstan": "^2.2",
         "phpstan/phpstan-strict-rules": "^2.0",

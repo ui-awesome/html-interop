@@ -7,6 +7,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## 0.4.3 Under development
 
+- chore: remove obsolete scaffold tooling and align package maintenance checks with PHP Forge conventions.
+
 ## 0.4.2 July 29, 2026
 
 - chore: remove the unused Composer require checker development dependency (the package ships only standalone enums, so the tool finds no used symbols and cannot run).
